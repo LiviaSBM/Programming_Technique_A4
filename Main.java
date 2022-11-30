@@ -4,6 +4,7 @@ public class Main {
     
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Hi, what would you like to do?");
         char choice;
 
         do {
@@ -14,21 +15,9 @@ public class Main {
 		    System.out.println("5: Quit");
 
             choice = input.nextLine().charAt(0);
-            switch (choice) {
-                case '1':
-                //TODO 
-                case '2':
-                //TODO
-                case '3':
+            
+            MarketSpace.getInstance().newProduct(choice);
 
-                case '4':
-
-                case '5':
-
-                default:
-				System.out.println("Please enter a valid option.");
-
-            }
         } while (choice != '5');
 
 
